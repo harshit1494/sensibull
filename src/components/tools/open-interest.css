@@ -1,0 +1,104 @@
+/* Open Interest — matched to web.sensibull.com/open-interest/oi-change-vs-strike */
+.oi-shell { padding: 8px 15px 40px 0; }
+.oi-shell .sb-banner { margin-bottom: 8px; }
+.oi-up { color: var(--sb-green) !important; }
+.oi-down { color: var(--sb-red) !important; }
+.oi-frame { margin: 0 37px; background: var(--sb-deep); }
+.oi-tabs { height: 50px; background: var(--sb-panel-2); display: flex; align-items: center; padding: 0 32px; }
+.oi-tab-list { display: flex; gap: 24px; align-self: stretch; }
+.oi-tab-list button { background: none; border: 0; padding: 0; font-size: 14px; font-weight: 500; border-bottom: 2px solid transparent; }
+.oi-tab-list button.on { color: var(--sb-blue); font-weight: 700; border-bottom-color: var(--sb-blue); }
+.oi-stats { margin-left: auto; display: flex; gap: 20px; font-size: 14px; }
+.oi-stats p { display: inline-flex; align-items: center; gap: 6px; }
+.oi-stats b { font-weight: 600; }
+.oi-stats span { font-size: 12px; }
+.oi-stats svg { color: var(--sb-sub); }
+.oi-body { display: grid; grid-template-columns: 346px minmax(0, 1fr); gap: 8px; padding: 16px 24px; align-items: start; }
+.oi-card { background: var(--sb-panel); border: .8px solid var(--sb-border); border-radius: 8px; }
+.oi-side { display: flex; flex-direction: column; gap: 9px; }
+.oi-side .oi-card { padding: 12px 16px 16px; }
+.oi-ticker { height: 42px; border: .8px solid var(--sb-border); border-radius: 6px; display: flex; align-items: center; gap: 8px; padding: 0 12px; position: relative; margin-bottom: 18px; }
+.oi-ticker-main { flex: 1; background: none; border: 0; display: flex; align-items: center; gap: 6px; padding: 0; font-size: 14px; height: 100%; text-align: left; }
+.oi-ticker-main strong { font-weight: 500; margin-left: 2px; }
+.oi-ticker-main span { font-weight: 500; }
+.oi-ticker-main em { font-style: normal; font-size: 12px; font-weight: 500; }
+.oi-radios { display: flex; gap: 34px; font-size: 14px; margin-bottom: 22px; }
+.oi-radios label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.sb-app .oi-radios input[type=radio] { appearance: none; -webkit-appearance: none; width: 18px; height: 18px; padding: 0; border: 1.5px solid var(--sb-mute); border-radius: 50%; background: transparent; display: inline-grid; place-content: center; margin: 0; cursor: pointer; }
+.sb-app .oi-radios input[type=radio]:checked { border-color: var(--sb-blue); }
+.sb-app .oi-radios input[type=radio]:checked::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--sb-blue); }
+.oi-dates { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: -8px 0 18px; }
+.oi-dates label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--sb-sub); }
+.oi-dates input { width: 100%; color-scheme: dark; }
+.oi-expiries { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.oi-expiries p { color: var(--sb-sub); font-size: 14px; margin-bottom: 4px; }
+.oi-expiries label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.oi-range-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.oi-range-head p { color: var(--sb-sub); font-size: 14px; }
+.oi-range-head .sb-link { font-size: 14px; }
+.oi-minmax { display: grid; grid-template-columns: 1fr 1fr; gap: 0 50px; margin-bottom: 24px; }
+.oi-stepper-wrap { display: flex; flex-direction: column; gap: 8px; color: var(--sb-sub); font-size: 14px; }
+.oi-stepper-wrap .sb-stepper { width: 100px; height: 28px; }
+.oi-sub { color: var(--sb-sub); font-size: 14px; margin-bottom: 8px; }
+.oi-chips { display: flex; flex-wrap: wrap; gap: 8px 8px; }
+.oi-chips button { height: 32px; min-width: 48px; padding: 0 12px; background: var(--sb-panel); border: .8px solid var(--sb-border); border-radius: 6px; font-size: 12px; font-weight: 500; }
+.oi-chips button:first-child { width: 82px; }
+.oi-chips button.on { border-color: var(--sb-blue); color: var(--sb-blue) !important; }
+.oi-main { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.oi-chart-card { padding: 20px 16px 16px; }
+.oi-chart-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding: 0 0 0 16px; }
+.oi-chart-head > div { display: flex; align-items: center; gap: 22px; }
+.oi-chart-head > div p { font-size: 16px; font-weight: 500; }
+.oi-chart-head .sb-toggle { font-size: 14px; margin-right: 16px; }
+.oi-new { background: #e5c44a; color: #3b2f00; font-size: 10px; font-weight: 500; border-radius: 3px; padding: 0 4px; line-height: 16px; }
+.oi-strike-pick { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--sb-sub); margin-right: 16px; }
+.oi-strike-pick select { width: 100px; height: 30px; }
+.oi-plot { position: relative; }
+.oi-plot svg { width: 100%; height: auto; display: block; font-family: inherit; }
+.oi-legend { display: flex; justify-content: center; gap: 22px; font-size: 12px; margin-top: 2px; }
+.oi-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.oi-legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.oi-legend .put { background: rgb(117, 243, 123); }
+.oi-legend .call { background: rgb(233, 103, 103); }
+.oi-legend .fut { background: var(--sb-blue); }
+.oi-legend .px { width: 16px; height: 0; border-top: 1.5px dashed var(--sb-text); border-radius: 0; }
+.oi-time { display: flex; align-items: center; gap: 12px; margin: 18px 16px 0; font-size: 12px; font-weight: 500; }
+.oi-time .sb-range { flex: 1; }
+.oi-time svg { color: var(--sb-sub); }
+.oi-windows { display: flex; justify-content: space-between; gap: 8px; margin: 16px 16px 0; flex-wrap: wrap; }
+.oi-windows button { height: 32px; padding: 0 12px; background: var(--sb-panel); border: .8px solid var(--sb-border); border-radius: 6px; font-size: 12px; font-weight: 500; }
+.oi-windows button.on { border-color: var(--sb-blue); color: var(--sb-blue) !important; }
+.oi-summary { display: flex; align-items: center; gap: 56px; margin: 16px 16px 0; }
+.oi-day { background: var(--sb-deep); border-radius: 8px; height: 40px; padding: 0 16px; display: flex; align-items: center; font-size: 14px; font-weight: 500; }
+.oi-sum-grid { display: grid; grid-template-columns: auto auto; gap: 0 22px; font-size: 14px; }
+.oi-sum-grid b { font-weight: 500; }
+.oi-note { background: var(--sb-panel-2); border: .8px solid var(--sb-border); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+.oi-note p { font-size: 14px; color: var(--sb-text); }
+.oi-note b { font-weight: 500; }
+.oi-how p { font-size: 13px; color: var(--sb-sub); }
+.oi-dismiss { z-index: 4; }
+.oi-ticker .sb-pop { z-index: 8; }
+
+@media (max-width: 1100px) {
+	.oi-frame { margin: 0 12px; }
+	.oi-shell { padding-right: 0; }
+	.oi-shell .sb-banner { margin: 0 12px 8px; }
+	.oi-body { grid-template-columns: 1fr; padding: 12px; }
+	.oi-tabs { padding: 0 12px; overflow-x: auto; }
+	.oi-tab-list { flex-shrink: 0; }
+	.oi-stats { display: none; }
+	.oi-summary { flex-wrap: wrap; gap: 16px; }
+}
+
+/* Multistrike OI */
+.ms-oi-list { border: .8px solid var(--sb-border); border-radius: 6px; margin-top: 4px; }
+.ms-oi-head { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; }
+.ms-oi-toggle { background: none; border: 0; padding: 0; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; }
+.ms-oi-sel { height: 24px; padding: 0 8px; border: .8px solid var(--sb-border); background: var(--sb-panel); border-radius: 4px; font-size: 11px; display: inline-flex; align-items: center; gap: 4px; }
+.ms-oi-sel.on { background: var(--sb-chip); border-color: var(--sb-blue); color: var(--sb-blue) !important; }
+.ms-oi-items { display: flex; flex-direction: column; gap: 6px; padding: 0 12px 12px 30px; }
+.ms-oi-items label { display: flex; align-items: center; gap: 10px; font-size: 13px; cursor: pointer; }
+.ms-oi-items i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; margin-left: -2px; }
+.ms-oi-tools { display: flex; justify-content: space-between; padding: 0 16px 8px; }
+.ms-oi-card .ts-legend { width: 260px; }
+.ms-oi-note { font-size: 14px; padding: 14px 16px 4px; }

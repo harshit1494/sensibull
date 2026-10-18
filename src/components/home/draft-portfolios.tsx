@@ -1,0 +1,4 @@
+import { ChevronRight } from 'lucide-react';
+export function DraftPortfolios() {
+ return <section className="draft section-rail"><div className="draft-copy"><span className="section-label">DRAFT PORTFOLIOS</span><h2>Create, record and<br/>track trades</h2><ul>{['Track Option Strategy Prices, P&Ls and Option Greeks before trading them','Import your broker order history into a well organized long-term ledger','Write down new ideas & reasons for your trades with built-in Notes'].map(t=><li key={t}><ChevronRight/>{t}</li>)}</ul><a className="outline-button" href="/tools/strategy-builder">Create Draft Portfolio</a></div><div className="draft-art"><video autoPlay muted loop playsInline preload="none" poster="https://sensibull.com/images/vt-main-mobile.webp" aria-label="Draft portfolios interface"><source src="https://sensibull.com/images/vt-video.webm" type="video/webm"/></video></div></section>;
+}

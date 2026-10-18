@@ -1,0 +1,131 @@
+/* FII DII Data — matched to web.sensibull.com/fii-dii-data */
+.fd-shell { padding: 8px 0 40px; }
+.fd-shell .sb-banner { margin: 0 15px 8px 0; }
+.fd-tabs { height: 49px; background: var(--sb-panel-2); border-bottom: .8px solid var(--sb-border); display: flex; gap: 24px; padding: 0 32px; }
+.fd-tabs button { background: none; border: 0; padding: 0; font-size: 14px; font-weight: 500; border-bottom: 2px solid transparent; }
+.fd-tabs button.on { color: var(--sb-blue); font-weight: 700; border-bottom-color: var(--sb-blue); }
+.fd-muted { color: var(--sb-sub); }
+.fd-bull { color: var(--sb-green); }
+.fd-bear { color: var(--sb-red); }
+
+/* summary */
+.fd-summary { display: flex; align-items: stretch; min-height: calc(100dvh - 175px); }
+.fd-filters { width: 227px; flex-shrink: 0; background: var(--sb-panel); padding: 16px; display: flex; flex-direction: column; gap: 24px; }
+.fd-filter-head { display: flex; justify-content: space-between; align-items: center; }
+.fd-filter-head p { font-size: 18px; font-weight: 600; }
+.fd-filter-head .sb-link { font-size: 14px; }
+.fd-group { display: flex; flex-direction: column; gap: 10px; }
+.fd-group > p { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+.fd-check { font-size: 14px !important; gap: 10px !important; }
+.fd-labels { align-items: flex-start !important; font-size: 14px !important; }
+.fd-labels i { margin-top: 2px; }
+.fd-labels small { color: var(--sb-sub); font-size: 13px; }
+.fd-main { flex: 1; min-width: 0; padding: 0 20px 24px; }
+.fd-bar { height: 64px; display: flex; align-items: center; justify-content: space-between; max-width: 873px; }
+.fd-how-btn { font-size: 14px !important; gap: 8px !important; }
+.fd-date { display: flex; align-items: center; gap: 10px; position: relative; }
+.fd-date > .sb-link { font-size: 14px; gap: 6px; }
+.fd-arrow { width: 32px; height: 40px; background: var(--sb-panel); border: .8px solid var(--sb-border); border-radius: 6px; display: flex; align-items: center; justify-content: center; padding: 0; }
+.fd-arrow:disabled { opacity: .4; cursor: default; }
+.fd-date-pick { position: relative; }
+.fd-date-pick > button { height: 40px; width: 144px; background: var(--sb-panel); border: .8px solid var(--sb-border); border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; }
+.fd-date-pop { top: 46px; left: 0; min-width: 160px; max-height: 300px; overflow: auto; z-index: 9; }
+.fd-date-pop button.on strong, .fd-month-pop button.on strong { color: var(--sb-blue); }
+.fd-dismiss { z-index: 5; }
+.fd-date .sb-pop, .fd-month .sb-pop { z-index: 9; }
+.fd-grid { display: flex; gap: 3px; align-items: flex-start; }
+.fd-table-card { width: 890px; max-width: 100%; background: var(--sb-panel); border: .8px solid var(--sb-line); border-radius: 8px; overflow: hidden; }
+.fd-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.fd-table th, .fd-table td { padding: 0 !important; height: 38px; font-size: 12px; border-bottom: .8px solid var(--sb-line); }
+.fd-table th { height: 37px; font-weight: 500; color: var(--sb-text) !important; text-align: left; }
+.fd-table th:nth-child(1) { width: 129px; text-align: right; padding-right: 16px !important; }
+.fd-table th:nth-child(2) { width: 120px; padding-left: 8px !important; }
+.fd-table th:nth-child(3), .fd-table th:nth-child(4) { width: 217px; }
+.fd-table th:nth-child(5), .fd-table th:nth-child(6) { width: 104px; }
+.fd-table th > div { display: flex; align-items: center; justify-content: space-between; padding: 0 8px; gap: 6px; }
+.fd-table th svg { color: var(--sb-sub); }
+.fd-table th.bear-h > div { justify-content: flex-end; }
+.fd-table th.bear-h > div span { margin-right: auto; text-align: right; flex: 1; }
+.fd-table th.num > div { justify-content: center; }
+.fd-table td.fd-part { vertical-align: top; text-align: right; padding: 11px 16px 0 0 !important; font-weight: 500; border-right: .8px solid var(--sb-line); }
+.fd-seg button { background: none; border: 0; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 0 8px; height: 38px; }
+.fd-seg.sub { padding-left: 24px !important; color: var(--sb-sub); }
+.fd-indecisive { background: var(--sb-panel-2); color: var(--sb-sub); text-align: center; }
+.fd-bear, .fd-bull { position: relative; }
+.fd-bear.tint { background: var(--sb-red-bg); }
+.fd-bull.tint { background: var(--sb-green-bg); }
+.fd-pill { position: absolute; top: 9px; height: 20px; display: flex; align-items: center; overflow: hidden; }
+.fd-pill p { font-size: 10px; font-weight: 500; color: var(--sb-panel); white-space: nowrap; padding: 0 8px; width: 100%; text-align: center; }
+.fd-pill.bear { right: 0; background: #c06767; border-radius: 4px 0 0 4px; }
+.fd-pill.bull { left: 0; background: var(--sb-green); border-radius: 0 4px 4px 0; }
+.fd-table td.num { text-align: center; border-left: .8px solid var(--sb-line); }
+.fd-sub td { background: #1a1d20; height: 30px; }
+.fd-sub-bar { height: 8px; background: var(--sb-line); border-radius: 4px; margin: 0 12px; overflow: hidden; }
+.fd-sub-bar i { display: block; height: 100%; border-radius: 4px; }
+.fd-sub-bar i.bull { background: var(--sb-green); }
+.fd-sub-bar i.bear { background: #c06767; }
+.fd-empty { text-align: center; color: var(--sb-sub); height: 80px !important; }
+.fd-cards { width: 203px; display: flex; flex-direction: column; gap: 8px; }
+.fd-card { background: var(--sb-panel); border: .8px solid var(--sb-line); border-radius: 8px; overflow: hidden; }
+.fd-card-head { background: var(--sb-panel-2); padding: 10px 16px; font-size: 12px; color: var(--sb-sub); }
+.fd-card-body { padding: 44px 16px; text-align: center; font-size: 12px; color: var(--sb-sub); }
+.fd-index { padding: 16px 20px 4px; }
+.fd-index p:first-child { font-size: 14px; font-weight: 500; }
+.fd-index-v { font-size: 12px; display: flex; align-items: center; gap: 6px; margin-top: 4px !important; padding-bottom: 12px; }
+.fd-index-v em { font-style: normal; }
+.fd-index .sb-chip { height: 20px; min-width: 26px; }
+
+/* F&O / cash / history */
+.fd-fno { padding: 16px 24px; }
+.fd-fno-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.fd-seg-btns { display: inline-flex; gap: 6px; background: var(--sb-panel); border: .8px solid var(--sb-border); border-radius: 8px; padding: 4px; }
+.fd-seg-btns button { height: 30px; min-width: 48px; padding: 0 12px; border: .8px solid transparent; background: var(--sb-panel); border-radius: 4px; font-size: 12px; }
+.fd-seg-btns button.on { background: var(--sb-blue); border-color: var(--sb-blue); color: var(--sb-panel) !important; font-weight: 500; }
+.fd-month { position: relative; }
+.fd-month > button { height: 40px; width: 165px; background: var(--sb-panel); border: .8px solid var(--sb-border); border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; }
+.fd-month-pop { top: 46px; left: auto; right: 0; min-width: 180px; }
+.fd-sec { margin-top: 24px; }
+.fd-sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 8px; flex-wrap: wrap; }
+.fd-sec-head h3, .fd-h3 { font-size: 16px; font-weight: 600; margin: 0; }
+.fd-h3 { margin-bottom: 12px; }
+.fd-read { background: none; border: 0; padding: 0; font-size: 11px; color: var(--sb-text); display: inline-flex; align-items: center; gap: 4px; margin-top: 2px; }
+.fd-legend { display: flex; align-items: center; gap: 20px; font-size: 14px; flex-wrap: wrap; }
+.fd-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.fd-legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.fd-legend i.ln { width: 16px; height: 2px; background: rgb(210, 86, 241); border-radius: 0; }
+.fd-idx { width: 120px; height: 40px; font-size: 14px !important; border-radius: 6px !important; }
+.fd-ls { height: 42px; padding: 0 12px; background: transparent; border: .8px solid var(--sb-border); border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; }
+.fd-ls .sb-toggle input { display: none; }
+.fd-chart { position: relative; width: 100%; height: 360px; }
+.fd-chart svg { display: block; font-family: inherit; }
+.fd-tip { position: absolute; top: 28px; width: 268px; pointer-events: none; }
+.fd-tip-date { display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500; background: rgba(17, 17, 17, .85); border: .8px solid var(--sb-border); border-radius: 6px; padding: 10px 12px; position: relative; }
+.fd-tag-wrap { position: absolute; top: 10px; right: 12px; }
+.fd-tip-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 14px; font-weight: 400; }
+.fd-tip-row b { font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+.fd-tip-row em { font-style: normal; font-weight: 400; }
+.fd-tag { font-size: 10px; border-radius: 2px; padding: 2px 6px; line-height: 16px; font-weight: 400; }
+.fd-tag.bear { background: #930204; color: #ffb4a9; }
+.fd-tag.bull { background: #005230; color: #5ade99; }
+.fd-hist { width: 100%; border-collapse: collapse; background: var(--sb-panel); border: .8px solid var(--sb-line); border-radius: 8px; overflow: hidden; }
+.fd-hist th, .fd-hist td { padding: 10px 12px !important; font-size: 12px; border-bottom: .8px solid var(--sb-line); text-align: right; }
+.fd-hist th:first-child, .fd-hist td:first-child { text-align: left; }
+.fd-hist th { color: var(--sb-sub) !important; font-weight: 500; background: var(--sb-panel-2); }
+.fd-hist .fd-muted { margin-left: 6px; }
+.fd-how p { font-size: 13px; color: var(--sb-sub); }
+
+@media (max-width: 1100px) {
+	.fd-summary { flex-direction: column; }
+	.fd-filters { width: 100%; flex-direction: row; flex-wrap: wrap; gap: 20px 32px; }
+	.fd-main { padding: 0 12px 24px; }
+	.fd-grid { flex-direction: column; }
+	.fd-table-card { overflow-x: auto; width: 100%; }
+	.fd-table { min-width: 760px; }
+	.fd-cards { width: 100%; flex-direction: row; }
+	.fd-cards .fd-card { flex: 1; }
+	.fd-fno { padding: 12px; }
+	.fd-tabs { overflow-x: auto; padding: 0 12px; }
+	.fd-tabs button { flex-shrink: 0; }
+}
+
+.fd-ls .sb-toggle { display: inline-flex; }
