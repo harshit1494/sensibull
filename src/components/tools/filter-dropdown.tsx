@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ChevronDown, Search } from 'lucide-react';
 
 /**
- * Sensibull's multi-select filter dropdown: search box, column-flowing checkbox grid,
+ * TIGERBULL's multi-select filter dropdown: search box, column-flowing checkbox grid,
  * Select All / Unselect All, and Cancel / Apply (changes only commit on Apply).
  */
 export function FilterDropdown({ label, options, value, onApply, align = 'right' }: { label: string; options: string[]; value: string[]; onApply: (v: string[]) => void; align?: 'left' | 'right' }) {

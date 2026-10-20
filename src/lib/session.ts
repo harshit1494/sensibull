@@ -1,4 +1,4 @@
-const KEY = 'sensibull-session';
+const KEY = 'tigerbull-session';
 
 export type Session = { name: string; email: string };
 
@@ -24,5 +24,5 @@ export function readSession(): Session | null {
 export function writeSession(session: Session | null) {
 	if (session) window.localStorage.setItem(KEY, JSON.stringify(session));
 	else window.localStorage.removeItem(KEY);
-	window.dispatchEvent(new Event('sensibull-session'));
+	window.dispatchEvent(new Event('tigerbull-session'));
 }

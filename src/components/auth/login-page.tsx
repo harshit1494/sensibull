@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
-import { Activity, ChevronRight, ShieldCheck } from 'lucide-react';
+import { ChevronRight, ShieldCheck } from 'lucide-react';
+import { BrandLockup } from '@/components/brand-logo';
 import { checkLogin, HOME_AFTER_LOGIN, readSession, writeSession } from '@/lib/session';
 
 const BROKERS = [
@@ -28,10 +29,7 @@ export function LoginPage() {
 			<section className="free-login">
 				<div className="free-login-card free-login-card--solo">
 					<span className="brand">
-						<span className="brand-symbol">
-							<Activity size={17} />
-						</span>
-						SENSIBULL
+						<BrandLockup size={32} />
 					</span>
 					<h1>You’re in, {done.split(' ')[0]}.</h1>
 					<p>This free login stays on this browser. Strategy tools are ready whenever you are.</p>
@@ -60,10 +58,7 @@ export function LoginPage() {
 			<div className="free-login-left">
 				<p className="free-login-kicker">Welcome to</p>
 				<Link to="/" className="brand free-login-brand">
-					<span className="brand-symbol">
-						<Activity size={18} />
-					</span>
-					SENSIBULL
+					<BrandLockup size={40} />
 				</Link>
 				<p className="free-login-about">
 					India’s biggest Options Trading Platform. Trade low-risk Strategies, guess market direction with data, learn Options Trading
@@ -73,7 +68,7 @@ export function LoginPage() {
 						₹
 					</span>
 					<div>
-						<strong>No extra charges to trade directly from Sensibull</strong>
+						<strong>No extra charges to trade directly from TIGERBULL</strong>
 						<p>You only pay your normal brokerage to your broker. This applies to both free plans and Pro paid plans.</p>
 					</div>
 				</div>
@@ -121,7 +116,7 @@ export function LoginPage() {
 									return;
 								}
 								accounts[email] = { name: name || email.split('@')[0], password };
-								window.localStorage.setItem('sensibull-accounts', JSON.stringify(accounts));
+								window.localStorage.setItem('tigerbull-accounts', JSON.stringify(accounts));
 								writeSession({ name: accounts[email].name, email });
 								setDone(accounts[email].name);
 								navigate('/tools/strategy-builder');
@@ -215,7 +210,7 @@ export function LoginPage() {
 				</div>
 				<p className="free-login-legal">
 					By proceeding, you agree to <Link to="/legal">terms and conditions</Link>
-					<span>Sensibull Web 1.0.0</span>
+					<span>TIGERBULL Web 1.0.0</span>
 				</p>
 			</div>
 		</section>
@@ -224,7 +219,7 @@ export function LoginPage() {
 
 function readAccounts(): Record<string, { name: string; password: string }> {
 	try {
-		return JSON.parse(window.localStorage.getItem('sensibull-accounts') ?? '{}') as Record<
+		return JSON.parse(window.localStorage.getItem('tigerbull-accounts') ?? '{}') as Record<
 			string,
 			{ name: string; password: string }
 		>;

@@ -89,7 +89,7 @@ export function MarketAnalysis() {
 					<div className="ma-grid">
 						<div className="ma-left">
 							<div className={`ma-video ${playing ? 'playing' : ''}`} style={{ background: `linear-gradient(135deg, ${note.color}, #0f1720 78%)` }}>
-								<div className="ma-video-top"><span className="ma-logo">S</span><p>{note.title} | {note.day} Oct</p></div>
+								<div className="ma-video-top"><span className="ma-logo">T</span><p>{note.title} | {note.day} Oct</p></div>
 								<div className="ma-video-body">
 									<p className="ma-kicker">DAILY NIFTY &amp; BANKNIFTY ANALYSIS</p>
 									<p className="ma-date">{note.day} OCT 2026</p>

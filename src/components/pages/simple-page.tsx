@@ -24,7 +24,7 @@ export function SimplePage({
 					</div>
 				))}
 				<p className="center-note">
-					Questions? Write to <a href="mailto:help@sensibull.com">help@sensibull.com</a> or read the <Link to="/help">Help & FAQs</Link>.
+					Questions? Read the <Link to="/help">Help & FAQs</Link>.
 				</p>
 			</div>
 		</section>

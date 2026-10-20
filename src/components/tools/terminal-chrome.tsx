@@ -7,6 +7,7 @@ import {
 import '@/components/tools/strategy-builder.css';
 import '@/components/tools/mega-menu.css';
 import { readSession, writeSession, type Session } from '@/lib/session';
+import { BrandLockup } from '@/components/brand-logo';
 
 type Active = 'home' | 'trade' | 'analyse' | 'watchlist' | 'positions' | 'orders';
 
@@ -15,14 +16,14 @@ export function useSession() {
 	useEffect(() => {
 		const sync = () => setSession(readSession());
 		sync();
-		window.addEventListener('sensibull-session', sync);
-		return () => window.removeEventListener('sensibull-session', sync);
+		window.addEventListener('tigerbull-session', sync);
+		return () => window.removeEventListener('tigerbull-session', sync);
 	}, []);
 	return session;
 }
 
 export function openLogin() {
-	window.dispatchEvent(new Event('sensibull-open-login'));
+	window.dispatchEvent(new Event('tigerbull-open-login'));
 }
 
 type Item = { label: string; to: string; icon: LucideIcon; desc?: string; badge?: { text: string; tone: 'blue' | 'yellow' } };
@@ -90,7 +91,7 @@ function isActiveItem(item: Item, path: string, search: string) {
 }
 
 /**
- * Sensibull-style navigation: Trade / Analyse open full-width mega menus on hover (or click / keyboard),
+ * TIGERBULL-style navigation: Trade / Analyse open full-width mega menus on hover (or click / keyboard),
  * with a dimmed backdrop over the page; leaving the header + panel, pressing Esc, clicking the backdrop
  * or navigating closes them.
  */
@@ -188,7 +189,7 @@ export function MegaNav({ active, onWatchlist, onPositions, onOrders }: { active
 	);
 }
 
-/** Sensibull web-terminal header (logo / page title, centre nav, login + avatar). */
+/** TIGERBULL web-terminal header (logo / page title, centre nav, login + avatar). */
 export function TerminalHeader({ title, active }: { title: string; active: Active }) {
 	const session = useSession();
 	const [accountOpen, setAccountOpen] = useState(false);
@@ -196,9 +197,8 @@ export function TerminalHeader({ title, active }: { title: string; active: Activ
 	return (
 		<header className="sb-top">
 			<div className="sb-brand">
-				<Link to={session ? '/home' : '/'} className="sb-logo" aria-label="Sensibull home">
-					<svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="#ff5722" /><path d="M3 10.5h2.6l1.6-4.2 2.4 6.4 1.8-4.4 1.2 2.2H15" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
-					SENSIBULL
+				<Link to={session ? '/home' : '/'} className="sb-logo" aria-label="TIGERBULL home">
+					<BrandLockup size={24} />
 				</Link>
 				<em>/</em>
 				<h1>{title}</h1>
@@ -233,7 +233,7 @@ const TAB_BAR: { id: Active; label: string; to: string; icon: LucideIcon }[] = [
 	{ id: 'watchlist', label: 'Watchlist', to: '/watchlist', icon: Bookmark },
 ];
 
-/** Bottom tab bar shown on narrow screens, like the Sensibull web app. */
+/** Bottom tab bar shown on narrow screens, like the TIGERBULL web app. */
 export function MobileTabBar({ active }: { active: Active }) {
 	return (
 		<nav className="sb-tabbar" aria-label="App navigation">

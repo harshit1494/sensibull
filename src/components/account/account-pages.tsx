@@ -310,14 +310,14 @@ type HomeCard = { title: string; desc?: string; to: string; icon: LucideIcon; ba
 const HOME_CARDS: HomeCard[] = [
 	{ title: 'Strategy Builder', desc: 'Create & analyse trades', to: '/tools/strategy-builder', icon: PencilRuler, badge: 'Popular' },
 	{ title: 'Draft Portfolios', desc: 'Create, record, and track trades', to: '/tools/strategy-builder?drafts=1', icon: FolderOpen },
-	{ title: 'Verified By Sensibull', desc: 'Share your verified P&L. Or follow verified profitable traders', to: '/tools/verified', icon: Coins },
+	{ title: 'Verified By TIGERBULL', desc: 'Share your verified P&L. Or follow verified profitable traders', to: '/tools/verified', icon: Coins },
 	{ title: 'Expiry Trades', desc: 'Predict the expiry and get profitable option trades', to: '/tools/expiry-trades', icon: Flag },
 	{ title: 'Learn Options Strategies', desc: 'Learn about different Options trading strategies', to: '/tools/learn-options-strategies', icon: BookOpen, badge: 'New' },
 	{ title: 'Learn Options Trading', desc: 'Learn from free video courses', to: '/tools/learn-options-trading', icon: MonitorPlay },
 	{ title: 'Easy Options', desc: 'Just guess up or down', to: '/tools/easy-options', icon: Triangle },
 	{ title: 'Strategy Wizard', desc: 'Give a target, get a trade', to: '/tools/strategy-wizard', icon: Target },
 	{ title: 'Market Analysis', to: '/tools/market-analysis', icon: TrendingUp },
-	{ title: 'Help / Support', desc: 'Get in touch with us', to: '/help', icon: Headset },
+	{ title: 'Help / Support', desc: 'Common questions and FAQs', to: '/help', icon: Headset },
 	{ title: 'FAQ', to: '/help', icon: CircleHelp },
 ];
 
@@ -327,7 +327,7 @@ const FEATURES: { title: string; desc: string; cta: string; to: string; icon: Lu
 	{ title: 'Create your own strategies', desc: 'Create and analyse your own custom Options Strategies', cta: 'Strategy builder', to: '/tools/strategy-builder', icon: PencilRuler, tone: '#f68663' },
 	{ title: 'Draft Portfolios', desc: 'Create and track your trades', cta: 'Draft Portfolios', to: '/tools/strategy-builder?drafts=1', icon: FolderOpen, tone: '#68a5ea' },
 	{ title: 'NIFTY Heatmap', desc: 'Discover market trends at a glance', cta: 'Heatmap', to: '/tools/screener?view=heatmap', icon: Grid2x2, tone: '#32d583' },
-	{ title: '#VerifiedBySensibull', desc: 'Share your verified P&L with the trading community', cta: 'Share Verified P&L', to: '/tools/verified', icon: Hash, tone: '#68a5ea' },
+	{ title: '#VerifiedByTIGERBULL', desc: 'Share your verified P&L with the trading community', cta: 'Share Verified P&L', to: '/tools/verified', icon: Hash, tone: '#68a5ea' },
 ];
 
 const PROMO_KEY = 'sb-mindful-promo-dismissed';
@@ -392,7 +392,7 @@ function DesktopHome({ name }: { name: string | null }) {
 
 	return (
 		<div className="hd">
-			<h2 className="hd-welcome">{name ? `Welcome ${name},` : 'Welcome to Sensibull'}</h2>
+			<h2 className="hd-welcome">{name ? `Welcome ${name},` : 'Welcome to TIGERBULL'}</h2>
 			<p className="ac-showcase-head hd-live">
 				<Radio size={16} /> <b>6061 people</b> are sharing their live positions right now. <Link to="/tools/verified">Check out Showcase</Link>
 			</p>
@@ -442,7 +442,7 @@ function MobileHome({ session }: { session: ReturnType<typeof useSession> }) {
 				<button type="button" className="ac-profile" onClick={openLogin}>
 					<span className="ac-avatar"><Users size={18} /></span>
 					<span className="ac-profile-text">
-						<strong>Login to Sensibull</strong>
+						<strong>Login to TIGERBULL</strong>
 						<small>Connect your broker for live prices and trading</small>
 					</span>
 					<ChevronRight size={20} />

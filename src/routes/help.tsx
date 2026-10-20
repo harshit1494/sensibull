@@ -3,14 +3,13 @@ import { Seo } from '@/components/seo';
 import { SiteChrome } from '@/components/site-chrome';
 
 const faqs = [
-	{ q: 'Is Sensibull free on Zerodha?', a: 'On Zerodha the Pro plan has no Sensibull charge. Other brokers may bill a monthly fee — the pricing section on the home page shows both.' },
+	{ q: 'Is TIGERBULL free on Zerodha?', a: 'On Zerodha the Pro plan has no TIGERBULL charge. Other brokers may bill a monthly fee — the pricing section on the home page shows both.' },
 	{ q: 'Do I need a broker to use the tools here?', a: 'You can build strategies, read the option chain and study open interest without a broker. Sending a live order still happens on your broker.' },
-	{ q: 'What is Verified by Sensibull?', a: 'Traders connect a broker and share live P&L. Followers see the numbers from the broker, not a screenshot.' },
+	{ q: 'What is Verified by TIGERBULL?', a: 'Traders connect a broker and share live P&L. Followers see the numbers from the broker, not a screenshot.' },
 	{ q: 'How do I reset my password?', a: 'Log out from the Login page and sign up again with the same email only if you have not created an account yet. Existing accounts keep the password you chose on this browser.' },
-	{ q: 'Who do I write to?', a: 'help@sensibull.com. Product questions, billing questions and bug reports all land there.' },
 ];
 
-const SEO = { title: 'Help & FAQs — Sensibull', description: 'Answers to common questions about Sensibull plans, tools and support.' };
+const SEO = { title: 'Help & FAQs — TIGERBULL', description: 'Answers to common questions about TIGERBULL plans, tools and support.' };
 
 export default function Help() {
 	const [open, setOpen] = useState(0);
@@ -21,7 +20,7 @@ export default function Help() {
 				<div className="page-wrap narrow-page">
 					<span className="section-label">HELP</span>
 					<h1>Help & FAQs</h1>
-					<p className="lead">Short answers. If yours is not here, write to help@sensibull.com.</p>
+					<p className="lead">Short answers to the questions we hear most often.</p>
 					<div className="faq-list">
 						{faqs.map((item, index) => (
 							<div key={item.q} className="opening">

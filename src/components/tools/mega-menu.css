@@ -1,4 +1,4 @@
-/* Sensibull header mega menus (Trade / Analyse) */
+/* TIGERBULL header mega menus (Trade / Analyse) */
 .sb-app .sb-nav > button .mm-chev { transition: transform .15s; }
 .sb-app .sb-nav > button.open { color: var(--sb-blue); border-bottom-color: var(--sb-blue); }
 .sb-app .sb-nav > button.open .mm-chev { transform: rotate(180deg); }

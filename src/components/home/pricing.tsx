@@ -9,9 +9,9 @@ export function Pricing() {
 		<section id="pricing" className="pricing section-rail">
 			<h2>Join more than 2 Million happy users</h2>
 			<p>
-				No charges for Sensibull on select brokers
+				No charges for TIGERBULL on select brokers
 				<br />
-				Sensibull app has no charges on iOS devices
+				TIGERBULL app has no charges on iOS devices
 			</p>
 			<div className="pricing-tabs" role="tablist" aria-label="Broker pricing">
 				{['Zerodha', 'Others'].map((b) => (
@@ -26,7 +26,7 @@ export function Pricing() {
 					<h3>Free Plan</h3>
 					<p>8 Useful Features</p>
 					<strong className="plan-price">Free</strong>
-					<button type="button" className="outline-button" onClick={() => window.dispatchEvent(new Event('sensibull-open-login'))}>
+					<button type="button" className="outline-button" onClick={() => window.dispatchEvent(new Event('tigerbull-open-login'))}>
 						Explore
 					</button>
 					<h4>Highlights</h4>
@@ -47,9 +47,9 @@ export function Pricing() {
 						{broker === 'Zerodha' ? '₹0' : '₹800'}
 						<small> /month</small>
 					</strong>
-					<p>{broker === 'Zerodha' ? 'No Charges' : 'View current broker offers on Sensibull'}</p>
-					<button type="button" className="primary-button" onClick={() => window.dispatchEvent(new Event('sensibull-open-login'))}>
-						{broker === 'Zerodha' ? "Let's Go" : 'Explore on Sensibull'}
+					<p>{broker === 'Zerodha' ? 'No Charges' : 'View current broker offers on TIGERBULL'}</p>
+					<button type="button" className="primary-button" onClick={() => window.dispatchEvent(new Event('tigerbull-open-login'))}>
+						{broker === 'Zerodha' ? "Let's Go" : 'Explore on TIGERBULL'}
 					</button>
 					<h4>Highlights</h4>
 					<ul>

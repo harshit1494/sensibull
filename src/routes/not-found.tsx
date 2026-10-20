@@ -5,7 +5,7 @@ import { SiteChrome } from '@/components/site-chrome';
 export default function NotFound() {
 	return (
 		<SiteChrome>
-			<Seo title="Page not found — Sensibull" description="The requested page could not be found." noindex />
+			<Seo title="Page not found — TIGERBULL" description="The requested page could not be found." noindex />
 			<section className="page-section">
 				<div className="page-wrap narrow-page">
 					<span className="section-label">404</span>

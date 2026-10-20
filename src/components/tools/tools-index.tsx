@@ -8,7 +8,7 @@ export function ToolsIndex() {
 				<span className="section-label">TOOLS</span>
 				<h1>Everything in the Tools menu, on this site</h1>
 				<p className="lead">
-					Strategy builder, option chain, open interest, FII/DII and Verified by Sensibull — open them here instead of
+					Strategy builder, option chain, open interest, FII/DII and Verified by TIGERBULL — open them here instead of
 					leaving the site.
 				</p>
 				<div className="tool-cards">

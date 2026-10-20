@@ -45,7 +45,7 @@ export function Screener() {
 			}
 			return true;
 		});
-		// Sensibull pins index futures first, then alphabetical.
+		// TIGERBULL pins index futures first, then alphabetical.
 		out = out.sort((a, b) => {
 			if (sort) {
 				const av = a[sort.key];
@@ -113,7 +113,7 @@ export function Screener() {
 									</div>
 								</div>
 							))}
-							<p className="sc-feedback">Got a question? Have some feedback? Found a bug? Please email us with your broker name and client ID at <a href="mailto:help@sensibull.com">help@sensibull.com</a></p>
+							<p className="sc-feedback">Got a question, feedback, or a bug? Use Help & FAQs with your broker name and client ID.</p>
 						</div>
 					</aside>
 

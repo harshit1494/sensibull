@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
-import { Activity, ChevronRight, ShieldCheck, X } from 'lucide-react';
+import { ChevronRight, ShieldCheck, X } from 'lucide-react';
+import { BrandLockup } from '@/components/brand-logo';
 import { checkLogin, HOME_AFTER_LOGIN, readSession, writeSession } from '@/lib/session';
 
 const BROKERS = [
@@ -10,7 +11,7 @@ const BROKERS = [
 	{ id: 'icici', name: 'ICICI Direct', mark: 'I', tone: '#b02a30' },
 ] as const;
 
-export const OPEN_LOGIN_EVENT = 'sensibull-open-login';
+export const OPEN_LOGIN_EVENT = 'tigerbull-open-login';
 
 export function LoginModal() {
 	const [open, setOpen] = useState(false);
@@ -67,10 +68,7 @@ function LoginModalBody({ onDone }: { onDone: () => void }) {
 		return (
 			<div className="login-modal-card login-modal-card--solo">
 				<span className="brand">
-					<span className="brand-symbol">
-						<Activity size={17} />
-					</span>
-					SENSIBULL
+					<BrandLockup size={32} />
 				</span>
 				<h1>You’re in, {done.split(' ')[0]}.</h1>
 				<p>This free login stays on this browser. Strategy tools are ready whenever you are.</p>
@@ -126,7 +124,7 @@ function LoginModalBody({ onDone }: { onDone: () => void }) {
 							return;
 						}
 						accounts[email] = { name: name || email.split('@')[0], password };
-						window.localStorage.setItem('sensibull-accounts', JSON.stringify(accounts));
+						window.localStorage.setItem('tigerbull-accounts', JSON.stringify(accounts));
 						writeSession({ name: accounts[email].name, email });
 						setDone(accounts[email].name);
 						return;
@@ -218,7 +216,7 @@ function LoginModalBody({ onDone }: { onDone: () => void }) {
 			</button>
 			<p className="free-login-legal">
 				By proceeding, you agree to <Link to="/legal">terms and conditions</Link>
-				<span>Sensibull Web 1.0.0</span>
+				<span>TIGERBULL Web 1.0.0</span>
 			</p>
 		</div>
 	);
@@ -226,7 +224,7 @@ function LoginModalBody({ onDone }: { onDone: () => void }) {
 
 function readAccounts(): Record<string, { name: string; password: string }> {
 	try {
-		return JSON.parse(window.localStorage.getItem('sensibull-accounts') ?? '{}') as Record<
+		return JSON.parse(window.localStorage.getItem('tigerbull-accounts') ?? '{}') as Record<
 			string,
 			{ name: string; password: string }
 		>;

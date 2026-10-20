@@ -24,7 +24,7 @@ export const leaders = [
 		name: 'Balajee Ramachandran',
 		role: 'Co-Founder, Product & Growth Head',
 		photo: 'https://sensibull.com/images/team/balajee-ramachandran.webp',
-		bio: 'Balajee is a full stack engineer with experience in building services in Python, Java and more recently Go, as well as frontends in React. With over a decade of experience as a programmer, he was a founding engineer at Sensibull. Now he works on product and growth at Sensibull.',
+		bio: 'Balajee is a full stack engineer with experience in building services in Python, Java and more recently Go, as well as frontends in React. With over a decade of experience as a programmer, he was a founding engineer at TIGERBULL. Now he works on product and growth at TIGERBULL.',
 	},
 	{
 		name: 'Sidharth Reddy',
@@ -59,8 +59,8 @@ export const team = [
 	{ name: 'Rohit Krishnan', role: 'Frontend Developer', photo: 'rohit-krishnan', bio: 'Rohit builds the analysis views — Greeks, payoff tables and the strategy chart. He likes interfaces that tell the truth about risk before the order goes in.' },
 	{ name: 'Saanu Reghunadh', role: 'Backend Developer', photo: 'saanu-reghunadh', bio: 'Saanu works on the order and positions services. He has strong opinions about idempotency and even stronger ones about expiry-day load tests.' },
 	{ name: 'Sanil Jacob', role: 'Product Designer', photo: 'sanil-jacob', bio: 'Sanil designs the flows that keep a complex product feeling simple. Strategy builder, mindful trading prompts and the pricing page all passed through his desk.' },
-	{ name: 'Sarath Elangovan', role: 'Growth & Marketing', photo: 'sarath-elangovan', bio: 'Sarath tells the Sensibull story outside the product — education, campaigns and the words on this very page. He believes good trading tools should not need a sales pitch.' },
-	{ name: 'Tanusmita Sarkar', role: 'Product Support', photo: 'tanusmita-sarkar', bio: 'Tanusmita answers the questions that land at help@sensibull.com. She turns repeated questions into product fixes and the rest into help articles.' },
+	{ name: 'Sarath Elangovan', role: 'Growth & Marketing', photo: 'sarath-elangovan', bio: 'Sarath tells the TIGERBULL story outside the product — education, campaigns and the words on this very page. He believes good trading tools should not need a sales pitch.' },
+	{ name: 'Tanusmita Sarkar', role: 'Product Support', photo: 'tanusmita-sarkar', bio: 'Tanusmita answers product questions from traders. She turns repeated questions into product fixes and the rest into help articles.' },
 	{ name: 'Udaya M', role: 'Frontend Developer', photo: 'udaya-m', bio: 'Udaya builds the web app traders log into every morning. He cares about fast tables, honest empty states and a strategy builder that never loses your work.' },
 ];
 

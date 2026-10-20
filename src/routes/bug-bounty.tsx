@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Seo } from '@/components/seo';
 import { SiteChrome } from '@/components/site-chrome';
 
-const SEO = { title: 'Bug Bounty — Sensibull', description: 'Report a security issue in Sensibull.' };
+const SEO = { title: 'Bug Bounty — TIGERBULL', description: 'Report a security issue in TIGERBULL.' };
 
 export default function BugBounty() {
 	const [sent, setSent] = useState(false);

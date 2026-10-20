@@ -45,7 +45,7 @@ export const fmtCompact = (v: number) => {
 };
 
 /**
- * Sensibull-style time-series panel: values on a right axis, crosshair that follows the
+ * TIGERBULL-style time-series panel: values on a right axis, crosshair that follows the
  * pointer, and a legend box (time + EOD chip + one row per series) that reads the hovered point.
  */
 export function TsChart({

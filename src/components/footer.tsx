@@ -18,24 +18,6 @@ export function Footer() {
 				</p>
 				<div className="footer-columns">
 					<div>
-						<strong>Follow</strong>
-						<div className="footer-links">
-							<a href="https://x.com/besensibull" target="_blank" rel="noreferrer">
-								Twitter
-							</a>
-							<a href="https://www.youtube.com/besensibull" target="_blank" rel="noreferrer">
-								Youtube
-							</a>
-							<a href="https://www.linkedin.com/company/sensibull/" target="_blank" rel="noreferrer">
-								LinkedIn
-							</a>
-						</div>
-					</div>
-					<div>
-						<p>
-							<strong>Contact </strong>
-							<a href="mailto:help@sensibull.com">help@sensibull.com</a>
-						</p>
 						<div className="footer-links">
 							<Link to="/help">Help & FAQs</Link>
 							<Link to="/disclaimers">Disclaimers</Link>
@@ -48,7 +30,7 @@ export function Footer() {
 						</div>
 					</div>
 				</div>
-				<p className="copyright">© 2026 All Right Reserved. Riskilla Software Technologies Private Limited</p>
+				<p className="copyright">© 2026 All Right Reserved</p>
 			</div>
 		</footer>
 	);

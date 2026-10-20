@@ -22,23 +22,23 @@ import { getTool } from '@/data/tools';
 import NotFound from '@/routes/not-found';
 
 const TERMINAL: Record<string, { title: string; el: () => ReactElement }> = {
-	'option-chain': { title: 'Live NSE Option Chain: NIFTY, BANKNIFTY, Stocks — Sensibull', el: () => <OptionChain /> },
-	'open-interest': { title: 'Open Interest Charts of NIFTY, BANKNIFTY, NSE — Sensibull', el: () => <OpenInterest /> },
-	'fii-dii': { title: 'Free NSE FII DII Data: Buy/Sell Activity in F&O, Cash — Sensibull', el: () => <FiiDii /> },
-	'live-options-charts': { title: 'Live Options OI, IV, PCR, IVP & Max Pain Charts — Sensibull', el: () => <LiveOptionsCharts /> },
-	'multi-straddle-strangle': { title: 'Live Intraday Multi Straddle-Strangle Charts — Sensibull', el: () => <MultiStraddle /> },
-	'stock-data': { title: 'See all data for an underlying at a glance — Sensibull', el: () => <StockData /> },
-	screener: { title: 'Options Screener using Futures and Options data — Sensibull', el: () => <Screener /> },
-	'technical-signals': { title: 'Technical Signals: Candlestick Patterns & Moving Averages — Sensibull', el: () => <TechnicalSignals /> },
-	'market-analysis': { title: 'NIFTY & BANKNIFTY Analysis for Tomorrow | Stock Market Outlook — Sensibull', el: () => <MarketAnalysis /> },
-	'economic-calendar': { title: 'Economic Calendar — Sensibull', el: () => <EconomicCalendar /> },
-	'iv-chart': { title: 'Implied Volatility (IV) Chart for NSE stocks — Sensibull', el: () => <IvChart /> },
-	'strategy-wizard': { title: 'Find the Most Profitable Options Strategies — Sensibull', el: () => <StrategyWizard /> },
-	'expiry-trades': { title: 'Option Trades for NIFTY SENSEX BANKNIFTY Expiry — Sensibull', el: () => <ExpiryTrades /> },
-	'easy-options': { title: 'Super simple, safe Options Trading for beginners — Sensibull', el: () => <EasyOptions /> },
-	'mindful-trading': { title: 'Mindful Trading — Sensibull', el: () => <MindfulTrading /> },
-	'learn-options-strategies': { title: 'Learn Options Strategies — Sensibull', el: () => <LearnStrategies /> },
-	'learn-options-trading': { title: 'Learn Options Trading: Free Video Courses — Sensibull', el: () => <LearnTrading /> },
+	'option-chain': { title: 'Live NSE Option Chain: NIFTY, BANKNIFTY, Stocks — TIGERBULL', el: () => <OptionChain /> },
+	'open-interest': { title: 'Open Interest Charts of NIFTY, BANKNIFTY, NSE — TIGERBULL', el: () => <OpenInterest /> },
+	'fii-dii': { title: 'Free NSE FII DII Data: Buy/Sell Activity in F&O, Cash — TIGERBULL', el: () => <FiiDii /> },
+	'live-options-charts': { title: 'Live Options OI, IV, PCR, IVP & Max Pain Charts — TIGERBULL', el: () => <LiveOptionsCharts /> },
+	'multi-straddle-strangle': { title: 'Live Intraday Multi Straddle-Strangle Charts — TIGERBULL', el: () => <MultiStraddle /> },
+	'stock-data': { title: 'See all data for an underlying at a glance — TIGERBULL', el: () => <StockData /> },
+	screener: { title: 'Options Screener using Futures and Options data — TIGERBULL', el: () => <Screener /> },
+	'technical-signals': { title: 'Technical Signals: Candlestick Patterns & Moving Averages — TIGERBULL', el: () => <TechnicalSignals /> },
+	'market-analysis': { title: 'NIFTY & BANKNIFTY Analysis for Tomorrow | Stock Market Outlook — TIGERBULL', el: () => <MarketAnalysis /> },
+	'economic-calendar': { title: 'Economic Calendar — TIGERBULL', el: () => <EconomicCalendar /> },
+	'iv-chart': { title: 'Implied Volatility (IV) Chart for NSE stocks — TIGERBULL', el: () => <IvChart /> },
+	'strategy-wizard': { title: 'Find the Most Profitable Options Strategies — TIGERBULL', el: () => <StrategyWizard /> },
+	'expiry-trades': { title: 'Option Trades for NIFTY SENSEX BANKNIFTY Expiry — TIGERBULL', el: () => <ExpiryTrades /> },
+	'easy-options': { title: 'Super simple, safe Options Trading for beginners — TIGERBULL', el: () => <EasyOptions /> },
+	'mindful-trading': { title: 'Mindful Trading — TIGERBULL', el: () => <MindfulTrading /> },
+	'learn-options-strategies': { title: 'Learn Options Strategies — TIGERBULL', el: () => <LearnStrategies /> },
+	'learn-options-trading': { title: 'Learn Options Trading: Free Video Courses — TIGERBULL', el: () => <LearnTrading /> },
 };
 
 export default function ToolRoute() {
@@ -49,7 +49,7 @@ export default function ToolRoute() {
 	if (tool.slug === 'strategy-builder') {
 		return (
 			<>
-				<Seo title="Strategy Builder — Sensibull" description={tool.blurb} />
+				<Seo title="Strategy Builder — TIGERBULL" description={tool.blurb} />
 				<StrategyBuilder />
 				<LoginModal />
 			</>
@@ -67,7 +67,7 @@ export default function ToolRoute() {
 	}
 	return (
 		<SiteChrome>
-			<Seo title={`${tool.name} — Sensibull`} description={tool.blurb} />
+			<Seo title={`${tool.name} — TIGERBULL`} description={tool.blurb} />
 			<ToolView tool={tool} />
 		</SiteChrome>
 	);

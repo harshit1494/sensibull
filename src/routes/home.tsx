@@ -11,7 +11,7 @@ import { Mindful } from '@/components/home/mindful';
 import { MobileApp } from '@/components/home/mobile-app';
 import { Testimonials } from '@/components/home/testimonials';
 import { Pricing } from '@/components/home/pricing';
-const SEO = {title:'Sensibull — Options Trading with Clarity and Control',description:'Explore options strategies, trade analysis, market data and mindful trading with this recreation of the Sensibull homepage.',image:'https://sensibull.com/images/homepage-hero-mobile.webp',jsonLd:{'@context':'https://schema.org','@type':'WebSite',name:'Sensibull homepage reproduction',description:'An independent recreation of the Sensibull options trading homepage.'}};
+const SEO = {title:'TIGERBULL — Options Trading with Clarity and Control',description:'Explore options strategies, trade analysis, market data and mindful trading with this recreation of the TIGERBULL homepage.',image:'https://sensibull.com/images/homepage-hero-mobile.webp',jsonLd:{'@context':'https://schema.org','@type':'WebSite',name:'TIGERBULL homepage reproduction',description:'An independent recreation of the TIGERBULL options trading homepage.'}};
 export default function HomePage() {
  return <SiteChrome>
 			<Seo {...SEO} /><Hero/><Brokers/><Strategies/><Positions/><DraftPortfolios/><DataTools/><Verified/><Mindful/><MobileApp/><Testimonials/><Pricing/></SiteChrome>;

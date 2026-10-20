@@ -609,7 +609,7 @@ export function MindfulTrading() {
 					{step === 0 ? (
 						<>
 							<h2>Stop Impulsive Trading</h2>
-							<p>Unplanned trades in the heat of the moment often lead to poor decisions and losses. Sensibull helps you control your impulsive trades.</p>
+							<p>Unplanned trades in the heat of the moment often lead to poor decisions and losses. TIGERBULL helps you control your impulsive trades.</p>
 							<button type="button" className="mt-cta" onClick={() => setStep(1)}>Get Started</button>
 							<Meditator />
 							<p className="mt-tag"><b>Stop.</b> <b className="blue">Breathe.</b> <b>Think</b></p>

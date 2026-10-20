@@ -20,7 +20,7 @@ export function Hero() {
 			</div>
 			<div className="hero-stats">
 				<div><strong>180k+</strong><span>Daily Users</span></div>
-				<div><strong><img src={assets + 'tick-badge.webp'} alt="" />SEBI</strong><span>RA INH200006895</span></div>
+				<div><strong><img src={assets + 'tick-badge.webp'} alt="" />SEBI</strong><span>Registered</span></div>
 				<div><strong><img src={assets + 'play-store.webp'} alt="Google Play" />4.6 <img src={assets + 'ratings-star.webp'} alt="stars" /></strong><span>120k Downloads</span></div>
 			</div>
 		</section>

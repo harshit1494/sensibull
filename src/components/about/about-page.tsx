@@ -18,7 +18,7 @@ export function AboutPage() {
 						<span>Options Trading Platform in India</span>
 					</h1>
 					<p>
-						Sensibull was built to bring structure and sanity to options trading. We care deeply about thoughtful
+						TIGERBULL was built to bring structure and sanity to options trading. We care deeply about thoughtful
 						problem-solving, long-term thinking, and building products we’d trust with our own money.
 					</p>
 					<div className="about-hiring">
@@ -170,7 +170,7 @@ export function AboutPage() {
 												<input name="email" type="email" required placeholder="you@email.com" />
 											</label>
 											<label>
-												Why Sensibull
+												Why TIGERBULL
 												<textarea name="note" required rows={3} placeholder="A few lines on what you’d build here" />
 											</label>
 											<button className="primary-button" type="submit">
@@ -187,7 +187,7 @@ export function AboutPage() {
 						<button
 							type="button"
 							className="inline-link"
-							onClick={() => window.dispatchEvent(new Event('sensibull-open-login'))}
+							onClick={() => window.dispatchEvent(new Event('tigerbull-open-login'))}
 						>
 							Log in
 						</button>{' '}

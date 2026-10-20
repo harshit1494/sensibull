@@ -24,7 +24,7 @@ export const tools: Tool[] = [
 	{ slug: 'learn-options-trading', name: 'Learn Options Trading', group: 'Learn', blurb: 'Free video course on options trading, from calls and puts to volatility.' },
 	{ slug: 'iv-chart', name: 'IV Chart', group: 'Analyse', blurb: 'ATM implied volatility plotted against the price, day by day.' },
 	{ slug: 'economic-calendar', name: 'Stock Market Calendar', group: 'Analyse', blurb: 'Economic events, results dates and market holidays in one place.' },
-	{ slug: 'verified', name: 'Verified by Sensibull', group: 'Community', blurb: 'Follow traders who share live, broker-verified P&L. No screenshots, no stories.' },
+	{ slug: 'verified', name: 'Verified by TIGERBULL', group: 'Community', blurb: 'Follow traders who share live, broker-verified P&L. No screenshots, no stories.' },
 ];
 
 export function getTool(slug: string) {

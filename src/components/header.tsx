@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router';
 import {
-	Activity, AlignCenter, Archive, ChartNoAxesColumn, ChevronDown, Clock, Ellipsis, Filter, Landmark, Menu, SquarePen, X,
+	AlignCenter, Archive, ChartNoAxesColumn, ChevronDown, Clock, Ellipsis, Filter, Landmark, Menu, SquarePen, X,
 	type LucideIcon,
 } from 'lucide-react';
+import { BrandLockup } from '@/components/brand-logo';
 import { readSession, writeSession, type Session } from '@/lib/session';
 
 type MenuTool = { label: string; to: string; icon: LucideIcon; desc?: string };
@@ -46,8 +47,8 @@ export function Header() {
 	useEffect(() => {
 		const sync = () => setSession(readSession());
 		sync();
-		window.addEventListener('sensibull-session', sync);
-		return () => window.removeEventListener('sensibull-session', sync);
+		window.addEventListener('tigerbull-session', sync);
+		return () => window.removeEventListener('tigerbull-session', sync);
 	}, []);
 
 	useEffect(() => {
@@ -77,10 +78,7 @@ export function Header() {
 	return (
 		<header className="site-header">
 			<Link className="brand" to="/">
-				<span className="brand-symbol">
-					<Activity size={17} />
-				</span>
-				SENSIBULL
+				<BrandLockup size={28} />
 			</Link>
 			<nav className={mobile ? 'navigation mobile-open' : 'navigation'} aria-label="Main navigation">
 				<Link to="/#pricing" onClick={() => setMobile(false)}>
@@ -128,7 +126,7 @@ export function Header() {
 				<button
 					className="login-button"
 					type="button"
-					onClick={() => window.dispatchEvent(new Event('sensibull-open-login'))}
+					onClick={() => window.dispatchEvent(new Event('tigerbull-open-login'))}
 				>
 					Free Login
 				</button>

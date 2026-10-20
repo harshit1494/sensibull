@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import { AlignJustify, BookOpen, ChevronDown, ChevronLeft, ChevronRight, HelpCircle, Info, LogIn, Minus, Plus, RefreshCw, Search, Settings, Trash2, TrendingUp, UserRound, ZoomOut } from 'lucide-react';
 import { readSession, writeSession, type Session } from '@/lib/session';
 import { MegaNav } from '@/components/tools/terminal-chrome';
+import { BrandLockup } from '@/components/brand-logo';
 import {
 	EXPIRIES,
 	INSTRUMENTS,
@@ -82,8 +83,8 @@ export function StrategyBuilder({ embedded = false }: { embedded?: boolean } = {
 	useEffect(() => {
 		const sync = () => setSession(readSession());
 		sync();
-		window.addEventListener('sensibull-session', sync);
-		return () => window.removeEventListener('sensibull-session', sync);
+		window.addEventListener('tigerbull-session', sync);
+		return () => window.removeEventListener('tigerbull-session', sync);
 	}, []);
 
 	// Deep links from Strategy Wizard / Learn pages: ?instrument_symbol=NIFTY&preset=bull-call
@@ -166,7 +167,7 @@ export function StrategyBuilder({ embedded = false }: { embedded?: boolean } = {
 	}
 
 	function openLogin() {
-		window.dispatchEvent(new Event('sensibull-open-login'));
+		window.dispatchEvent(new Event('tigerbull-open-login'));
 	}
 
 	const filtered = INSTRUMENTS.filter((item) => item.symbol.includes(query.toUpperCase()) || item.name.toLowerCase().includes(query.toLowerCase()));
@@ -182,9 +183,8 @@ export function StrategyBuilder({ embedded = false }: { embedded?: boolean } = {
 		<div className={embedded ? 'sb-app sb-app--embed' : 'sb-app'}>
 			<header className="sb-top">
 				<div className="sb-brand">
-					<Link to={session ? '/home' : '/'} className="sb-logo" aria-label="Sensibull home">
-						<svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="#ff5722" /><path d="M3 10.5h2.6l1.6-4.2 2.4 6.4 1.8-4.4 1.2 2.2H15" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
-						SENSIBULL
+					<Link to={session ? '/home' : '/'} className="sb-logo" aria-label="TIGERBULL home">
+						<BrandLockup size={24} />
 					</Link>
 					<em>/</em>
 					{embedded ? <span className="sb-crumb">Strategy Builder</span> : <h1>Strategy Builder</h1>}

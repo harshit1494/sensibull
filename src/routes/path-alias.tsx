@@ -9,8 +9,8 @@ const OI_TABS: Record<string, string> = {
 };
 const FII_TABS: Record<string, string> = { summary: '', fno: 'fno', cash: 'cash', history: 'history' };
 
-/** Maps web.sensibull.com style paths (e.g. /open-interest/multistrike-oi) onto our /tools/* pages. */
-export default function SensibullAlias({ to, subParam }: { to: string; subParam?: string }) {
+/** Maps legacy paths (e.g. /open-interest/multistrike-oi) onto our /tools/* pages. */
+export default function PathAlias({ to, subParam }: { to: string; subParam?: string }) {
 	const { search } = useLocation();
 	const { sub } = useParams();
 	const qs = new URLSearchParams(search);

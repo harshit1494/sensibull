@@ -1,4 +1,4 @@
-/* Strategy Builder — dark theme matched to web.sensibull.com/option-strategy-builder */
+/* Strategy Builder — dark theme matched to web.tigerbull.com/option-strategy-builder */
 .sb-app {
 	--sb-page: #0a0a0a;
 	--sb-panel: #1e2124;
@@ -45,7 +45,10 @@
 /* Header */
 .sb-top { height: 64px; background: var(--sb-panel); display: flex; align-items: center; padding: 0 32px; position: sticky; top: 0; z-index: 40; }
 .sb-brand { display: flex; align-items: center; gap: 0; min-width: 330px; }
-.sb-logo { display: flex; align-items: center; gap: 4px; color: #fff; font-weight: 700; font-size: 15px; letter-spacing: -.2px; text-decoration: none; }
+.sb-logo { display: flex; align-items: center; gap: 8px; color: #fff; font-weight: 700; font-size: 15px; letter-spacing: .2px; text-decoration: none; }
+.sb-logo .brand-lockup { gap: 8px; }
+.sb-logo .brand-wordmark { font-size: 15px; color: #fff; }
+.sb-logo .brand-mark { border-radius: 6px; }
 .sb-brand em { color: var(--sb-mute); font-style: normal; font-size: 22px; font-weight: 300; margin: 0 0 0 18px; transform: skewX(-8deg); }
 .sb-brand h1, .sb-brand .sb-crumb { font-weight: 500; font-size: 14px; padding-left: 14px; }
 .sb-nav { display: flex; align-self: stretch; gap: 40px; margin: 0 auto; position: relative; }
